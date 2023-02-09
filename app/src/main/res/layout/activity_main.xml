@@ -37,7 +37,7 @@
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/ulaval"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:text="ULaval"
@@ -47,13 +47,13 @@
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/profil"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:text="Mon Profil"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/ulaval" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

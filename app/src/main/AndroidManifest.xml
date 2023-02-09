@@ -12,6 +12,12 @@
         android:theme="@style/Theme.HelloULavalActivity"
         tools:targetApi="31">
         <activity
+            android:name=".WebActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UlavalActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

@@ -1,19 +1,26 @@
 package ca.ulaval.ima.tp1
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Parcel
 import android.os.Parcelable
+import android.widget.Button
 import java.util.Date
 import kotlinx.parcelize.Parcelize
-import java.time.LocalDate
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val monBoutonUlaval = findViewById<Button>(R.id.ulaval)
+
+        monBoutonUlaval.setOnClickListener(){
+            val newActivity = Intent(applicationContext, UlavalActivity::class.java)
+            startActivity(newActivity)
+        }
     }
-    var date = Date(2000, 8,13)
+
+    val date = Date(2000, 8,13)
     var profil = Profil("Toukam Zanjio", "Harold Wilson", date, "HATOZ" )
     val UrlToLoad = "www.google.com"
 
